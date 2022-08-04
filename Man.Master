@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Man.master.cs" Inherits="hari.Man" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <link href="css/Custome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    <form id="form2" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                
+              
+            </asp:ContentPlaceHolder>
+            
+
+          </div> 
+       
+ 
+        <div class="navbar navbar-inverse ">
+            <div class="btn ">
+               
+                <div class="">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                </div>
+              
+                     
+                        
+                        <a class="btn btn-lg btn-primary" href="Admin.aspx" role="button">Home</a>
+                     
+                         <a class="btn btn-lg btn-primary" href="AddNewData.aspx" role="button">Add New Data </a>
+                          <a class="btn btn-lg btn-primary" href="CallingList.aspx" role="button">Calling List</a>
+                 <a class="btn btn-lg btn-primary" href="AllDataExpertToExcel.aspx" role="button">All Data Expert  </a>
+                          <a class="btn btn-lg btn-primary" href="SinUp.aspx" role="button">SinUp </a>
+                         
+                        
+                <a class="btn btn-lg btn-primary" href="View.aspx" role="button">Detail </a>
+                 <a class="btn btn-lg btn-warning" href="SearchAdmin.aspx" role="button">Search Number </a>
+                        <a class="btn btn-lg btn-danger" href="Default.aspx" role="button">LogOut </a>
+                 
+                </div> 
+
+               <asp:Button ID="Button1" CssClass ="btn btn-link navbar-btn " runat="server" Text=""  />
+                        
+
+                      <div class="container">
+   
+</div>
+
+           
+            </div> 
+       
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
+ 

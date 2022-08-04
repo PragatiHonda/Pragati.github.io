@@ -1,0 +1,481 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6200B195-F753-4BC3-9DFD-4C4E67B13130}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>hari</RootNamespace>
+    <AssemblyName>hari</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=3.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="3.png" />
+    <Content Include="AddNewData.aspx" />
+    <Content Include="Admin.aspx" />
+    <Content Include="AdminHome.aspx" />
+    <Content Include="AllDataExpertToExcel.aspx" />
+    <Content Include="CallingList.aspx" />
+    <Content Include="ChangePassword.aspx" />
+    <Content Include="HsrpRecord.aspx" />
+    <Content Include="MhTax.aspx" />
+    <Content Include="Images\ImageNotAvailable.jpg" />
+    <Content Include="Images\Noimg.png" />
+    <Content Include="Images\ProductImages\10\GRAZIA01.jpg" />
+    <Content Include="Images\ProductImages\10\GRAZIA02.jpg" />
+    <Content Include="Images\ProductImages\10\GRAZIA03.jpg" />
+    <Content Include="Images\ProductImages\10\GRAZIA04.jpg" />
+    <Content Include="Images\ProductImages\10\GRAZIA05.jpg" />
+    <Content Include="Images\ProductImages\10\LEVI%27S  Slim Men Blue Jeans01.jpeg" />
+    <Content Include="Images\ProductImages\11\GRAZIA01.jpg" />
+    <Content Include="Images\ProductImages\11\GRAZIA02.jpg" />
+    <Content Include="Images\ProductImages\11\GRAZIA03.jpg" />
+    <Content Include="Images\ProductImages\11\GRAZIA04.jpg" />
+    <Content Include="Images\ProductImages\11\GRAZIA05.jpg" />
+    <Content Include="Images\ProductImages\11\LEVI%27S  Slim Men Blue Jeans01.jpeg" />
+    <Content Include="Images\ProductImages\12\LEVI%27S  Slim Men Blue Jeans01.jpeg" />
+    <Content Include="Images\ProductImages\12\LEVI%27S  Slim Men Blue Jeans02.jpeg" />
+    <Content Include="Images\ProductImages\13\LEVI%27S  Slim Men Blue Jeans01.jpeg" />
+    <Content Include="Images\ProductImages\13\LEVI%27S  Slim Men Blue Jeans02.jpeg" />
+    <Content Include="Images\ProductImages\13\LEVI%27S  Slim Men Blue Jeans03.jpeg" />
+    <Content Include="Images\ProductImages\13\LEVI%27S  Slim Men Blue Jeans04.jpeg" />
+    <Content Include="Images\ProductImages\13\LEVI%27S  Slim Men Blue Jeans05.jpeg" />
+    <Content Include="Images\ProductImages\14\JANstyle Footed Western Wear Legging  %28White, Solid%2901.jpeg" />
+    <Content Include="Images\ProductImages\14\JANstyle Footed Western Wear Legging  %28White, Solid%2902.jpeg" />
+    <Content Include="Images\ProductImages\14\JANstyle Footed Western Wear Legging  %28White, Solid%2903.jpeg" />
+    <Content Include="Images\ProductImages\14\JANstyle Footed Western Wear Legging  %28White, Solid%2904.jpeg" />
+    <Content Include="Images\ProductImages\14\JANstyle Footed Western Wear Legging  %28White, Solid%2905.jpeg" />
+    <Content Include="Images\ProductImages\15\SAARA  Woven, Solid, Plain, Embellished Banarasi Cotton Silk Saree  %28Light Blue%2901.jpeg" />
+    <Content Include="Images\ProductImages\15\SAARA  Woven, Solid, Plain, Embellished Banarasi Cotton Silk Saree  %28Light Blue%2902.jpeg" />
+    <Content Include="Images\ProductImages\15\SAARA  Woven, Solid, Plain, Embellished Banarasi Cotton Silk Saree  %28Light Blue%2903.jpeg" />
+    <Content Include="Images\ProductImages\15\SAARA  Woven, Solid, Plain, Embellished Banarasi Cotton Silk Saree  %28Light Blue%2904.jpeg" />
+    <Content Include="Images\ProductImages\15\SAARA  Woven, Solid, Plain, Embellished Banarasi Cotton Silk Saree  %28Light Blue%2905.jpeg" />
+    <Content Include="Images\ProductImages\1\BESPOQE  Men Regular Fit Solid Casual Shirt01.jpeg" />
+    <Content Include="Images\ProductImages\1\BESPOQE  Men Regular Fit Solid Casual Shirt02.jpeg" />
+    <Content Include="Images\ProductImages\1\BESPOQE  Men Regular Fit Solid Casual Shirt03.jpeg" />
+    <Content Include="Images\ProductImages\1\BESPOQE  Men Regular Fit Solid Casual Shirt04.jpeg" />
+    <Content Include="Images\ProductImages\1\BESPOQE  Men Regular Fit Solid Casual Shirt05.jpeg" />
+    <Content Include="Images\ProductImages\1\honda-cbs-1464785848.jpg" />
+    <Content Include="Images\ProductImages\2\HIGHLANDER  Men Slim Fit Checkered Spread Collar Casual Shirt01.jpeg" />
+    <Content Include="Images\ProductImages\2\HIGHLANDER  Men Slim Fit Checkered Spread Collar Casual Shirt02.jpeg" />
+    <Content Include="Images\ProductImages\2\HIGHLANDER  Men Slim Fit Checkered Spread Collar Casual Shirt03.jpeg" />
+    <Content Include="Images\ProductImages\2\HIGHLANDER  Men Slim Fit Checkered Spread Collar Casual Shirt04.jpeg" />
+    <Content Include="Images\ProductImages\2\HIGHLANDER  Men Slim Fit Checkered Spread Collar Casual Shirt05.jpeg" />
+    <Content Include="Images\ProductImages\3\FASHION DEPTH  Women Embroidered Rayon Straight Kurta  %28Pink%2901.jpeg" />
+    <Content Include="Images\ProductImages\3\FASHION DEPTH  Women Embroidered Rayon Straight Kurta  %28Pink%2902.jpeg" />
+    <Content Include="Images\ProductImages\3\FASHION DEPTH  Women Embroidered Rayon Straight Kurta  %28Pink%2903.jpeg" />
+    <Content Include="Images\ProductImages\3\FASHION DEPTH  Women Embroidered Rayon Straight Kurta  %28Pink%2904.jpeg" />
+    <Content Include="Images\ProductImages\3\FASHION DEPTH  Women Embroidered Rayon Straight Kurta  %28Pink%2905.jpeg" />
+    <Content Include="Images\ProductImages\4\Oomph!  Casual Butterfly Sleeve Floral Print Women Multicolor Top01.jpeg" />
+    <Content Include="Images\ProductImages\4\Oomph!  Casual Butterfly Sleeve Floral Print Women Multicolor Top02.jpeg" />
+    <Content Include="Images\ProductImages\4\Oomph!  Casual Butterfly Sleeve Floral Print Women Multicolor Top03.jpeg" />
+    <Content Include="Images\ProductImages\4\Oomph!  Casual Butterfly Sleeve Floral Print Women Multicolor Top04.jpeg" />
+    <Content Include="Images\ProductImages\4\Oomph!  Casual Butterfly Sleeve Floral Print Women Multicolor Top05.jpeg" />
+    <Content Include="Images\ProductImages\5\CLASSIO FASHION  Regular Fit Men Blue Pure Cotton Trousers01.jpeg" />
+    <Content Include="Images\ProductImages\5\CLASSIO FASHION  Regular Fit Men Blue Pure Cotton Trousers02.jpeg" />
+    <Content Include="Images\ProductImages\5\CLASSIO FASHION  Regular Fit Men Blue Pure Cotton Trousers03.jpeg" />
+    <Content Include="Images\ProductImages\5\CLASSIO FASHION  Regular Fit Men Blue Pure Cotton Trousers04.jpeg" />
+    <Content Include="Images\ProductImages\5\CLASSIO FASHION  Regular Fit Men Blue Pure Cotton Trousers05.jpeg" />
+    <Content Include="Images\ProductImages\5\Honda Bike01.jpg" />
+    <Content Include="Images\ProductImages\5\Honda Bike02.jpg" />
+    <Content Include="Images\ProductImages\5\Honda Bike03.jpg" />
+    <Content Include="Images\ProductImages\5\Honda Bike04.jpg" />
+    <Content Include="Images\ProductImages\5\Honda Bike05.jpg" />
+    <Content Include="Images\ProductImages\6\LEVI%27S  Slim Men Blue Jeans01.jpeg" />
+    <Content Include="Images\ProductImages\6\Peter England  Men blue check Casual Shirt01.jpeg" />
+    <Content Include="Images\ProductImages\6\Peter England  Men blue check Casual Shirt02.jpeg" />
+    <Content Include="Images\ProductImages\6\Peter England  Men blue check Casual Shirt03.jpeg" />
+    <Content Include="Images\ProductImages\6\Peter England  Men blue check Casual Shirt04.jpeg" />
+    <Content Include="Images\ProductImages\6\Peter England  Men blue check Casual Shirt05.jpeg" />
+    <Content Include="Images\ProductImages\7\LEVI%27S  Slim Men Blue Jeans01.jpeg" />
+    <Content Include="Images\ProductImages\7\Peter England  Men pink check Casual Shirt01.jpeg" />
+    <Content Include="Images\ProductImages\7\Peter England  Men pink check Casual Shirt02.jpeg" />
+    <Content Include="Images\ProductImages\7\Peter England  Men pink check Casual Shirt03.jpeg" />
+    <Content Include="Images\ProductImages\7\Peter England  Men pink check Casual Shirt04.jpeg" />
+    <Content Include="Images\ProductImages\7\Peter England  Men pink check Casual Shirt05.jpeg" />
+    <Content Include="Images\ProductImages\8\Flying Machine navy blue casual Shirts01.jpeg" />
+    <Content Include="Images\ProductImages\8\Flying Machine navy blue casual Shirts02.jpeg" />
+    <Content Include="Images\ProductImages\8\Flying Machine navy blue casual Shirts03.jpeg" />
+    <Content Include="Images\ProductImages\8\Flying Machine navy blue casual Shirts04.jpeg" />
+    <Content Include="Images\ProductImages\8\Flying Machine navy blue casual Shirts05.jpeg" />
+    <Content Include="Images\ProductImages\8\GRAZIA01.jpeg" />
+    <Content Include="Images\ProductImages\8\GRAZIA02.jpeg" />
+    <Content Include="Images\ProductImages\8\GRAZIA03.jpeg" />
+    <Content Include="Images\ProductImages\8\GRAZIA04.jpeg" />
+    <Content Include="Images\ProductImages\8\GRAZIA05.jpeg" />
+    <Content Include="Images\ProductImages\8\LEVI%27S  Slim Men Blue Jeans01.jpeg" />
+    <Content Include="Images\ProductImages\9\LEVI%27S  Slim Men Blue Jeans01.jpeg" />
+    <Content Include="Images\Shoes.jpeg" />
+    <Content Include="Images\tshirt.jpeg" />
+    <Content Include="image\G..jpg" />
+    <Content Include="1.jpg" />
+    <Content Include="2.jpg" />
+    <Content Include="MHTaxReport.aspx" />
+    <Content Include="mySlides\2.png" />
+    <Content Include="4.png" />
+    <Content Include="5.jpg" />
+    <Content Include="NDetail.aspx" />
+    <Content Include="OldBikeSearch.aspx" />
+    <Content Include="Styles\CALENDER.png" />
+    <Content Include="mySlides\Honda-Hornet-2.0-Repsol-Edition-Booking-Start.jpg" />
+    <Content Include="js\bootstrap.bundle.js" />
+    <Content Include="js\bootstrap.bundle.min.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\npm.js" />
+    <Content Include="Home.aspx" />
+    <Content Include="Mobile\iphone11.jpeg" />
+    <Content Include="mySlides\Livo.jpg" />
+    <Content Include="mySlides\Logo.png" />
+    <Content Include="mySlides\old-paper-3087322.jpg" />
+    <Content Include="mySlides\Sun.jpg" />
+    <Content Include="mySlides\wp2960877.jpg" />
+    <Content Include="OldBike.aspx" />
+    <Content Include="OldBikeDetail.aspx" />
+    <Content Include="OldBikeReportView.aspx" />
+    <Content Include="Restore.aspx" />
+    <Content Include="Scripts\calendar-en.min.js" />
+    <Content Include=".vs\DateTimePickerInASP.Net\v15\.suo" />
+    <Content Include=".vs\slnx.sqlite" />
+    <Content Include=".vs\VSWorkspaceState.json" />
+    <Content Include="TaxDetail.aspx" />
+    <None Include="packages.config" />
+    <None Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery.dynDateTime.min.js" />
+    <Content Include="Search.aspx" />
+    <Content Include="Defaultold.aspx" />
+    <Content Include="SearchAdmin.aspx" />
+    <Content Include="SinUp.aspx" />
+    <Content Include="Styles\calendar-blue.css" />
+    <Content Include="TaxReportData.aspx" />
+    <Content Include="UpdateReceived.aspx" />
+    <Content Include="View.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Default.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddNewData.aspx.cs">
+      <DependentUpon>AddNewData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddNewData.aspx.designer.cs">
+      <DependentUpon>AddNewData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHome.aspx.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminHome.aspx.designer.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AllDataExpertToExcel.aspx.cs">
+      <DependentUpon>AllDataExpertToExcel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AllDataExpertToExcel.aspx.designer.cs">
+      <DependentUpon>AllDataExpertToExcel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CallingList.aspx.cs">
+      <DependentUpon>CallingList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CallingList.aspx.designer.cs">
+      <DependentUpon>CallingList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Defualt.Master.cs">
+      <DependentUpon>Defualt.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Defualt.Master.designer.cs">
+      <DependentUpon>Defualt.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HsrpRecord.aspx.cs">
+      <DependentUpon>HsrpRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HsrpRecord.aspx.designer.cs">
+      <DependentUpon>HsrpRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Man.Master.cs">
+      <DependentUpon>Man.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Man.Master.designer.cs">
+      <DependentUpon>Man.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MhTax.aspx.cs">
+      <DependentUpon>MhTax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MhTax.aspx.designer.cs">
+      <DependentUpon>MhTax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MHTaxReport.aspx.cs">
+      <DependentUpon>MHTaxReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MHTaxReport.aspx.designer.cs">
+      <DependentUpon>MHTaxReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NDetail.aspx.cs">
+      <DependentUpon>NDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NDetail.aspx.designer.cs">
+      <DependentUpon>NDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OldBike.aspx.cs">
+      <DependentUpon>OldBike.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OldBike.aspx.designer.cs">
+      <DependentUpon>OldBike.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OldBikeDetail.aspx.cs">
+      <DependentUpon>OldBikeDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OldBikeDetail.aspx.designer.cs">
+      <DependentUpon>OldBikeDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OldBikeReportView.aspx.cs">
+      <DependentUpon>OldBikeReportView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OldBikeReportView.aspx.designer.cs">
+      <DependentUpon>OldBikeReportView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OldBikeSearch.aspx.cs">
+      <DependentUpon>OldBikeSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OldBikeSearch.aspx.designer.cs">
+      <DependentUpon>OldBikeSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Restore.aspx.cs">
+      <DependentUpon>Restore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Restore.aspx.designer.cs">
+      <DependentUpon>Restore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Defaultold.aspx.cs">
+      <DependentUpon>Defaultold.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Defaultold.aspx.designer.cs">
+      <DependentUpon>Defaultold.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchAdmin.aspx.cs">
+      <DependentUpon>SearchAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchAdmin.aspx.designer.cs">
+      <DependentUpon>SearchAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SinUp.aspx.cs">
+      <DependentUpon>SinUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SinUp.aspx.designer.cs">
+      <DependentUpon>SinUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TaxReportData.aspx.cs">
+      <DependentUpon>TaxReportData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TaxReportData.aspx.designer.cs">
+      <DependentUpon>TaxReportData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateReceived.aspx.cs">
+      <DependentUpon>UpdateReceived.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateReceived.aspx.designer.cs">
+      <DependentUpon>UpdateReceived.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TaxDetail.aspx.cs">
+      <DependentUpon>TaxDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TaxDetail.aspx.designer.cs">
+      <DependentUpon>TaxDetail.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Defualt.Master" />
+    <Content Include="Man.Master" />
+    <Content Include="Images\ProductImages\3\Peter England  Men Checkered Casual Shirt01" />
+    <Content Include="Images\ProductImages\3\Peter England  Men Checkered Casual Shirt02" />
+    <Content Include="Images\ProductImages\3\Peter England  Men Checkered Casual Shirt03" />
+    <Content Include="Images\ProductImages\3\Peter England  Men Checkered Casual Shirt04" />
+    <Content Include="Images\ProductImages\3\Peter England  Men Checkered Casual Shirt05" />
+    <Content Include="Images\ProductImages\4\Peter England  Men Checkered Casual Shirt01" />
+    <Content Include="Images\ProductImages\4\Peter England  Men Checkered Casual Shirt02" />
+    <Content Include="Images\ProductImages\4\Peter England  Men Checkered Casual Shirt03" />
+    <Content Include="Images\ProductImages\4\Peter England  Men Checkered Casual Shirt04" />
+    <Content Include="Images\ProductImages\4\Peter England  Men Checkered Casual Shirt05" />
+    <Content Include="Images\ProductImages\5\Peter England  Men Solid Formal Shirt01" />
+    <Content Include="Images\ProductImages\5\Peter England  Men Solid Formal Shirt02" />
+    <Content Include="Images\ProductImages\5\Peter England  Men Solid Formal Shirt03" />
+    <Content Include="Images\ProductImages\5\Peter England  Men Solid Formal Shirt04" />
+    <Content Include="Images\ProductImages\5\Peter England  Men Solid Formal Shirt05" />
+    <Content Include="Images\Thumbs.db" />
+    <Content Include="mySlides\Thumbs.db" />
+    <Content Include="js\bootstrap.bundle.js.map" />
+    <Content Include="js\bootstrap.bundle.min.js.map" />
+    <Content Include="js\bootstrap.js.map" />
+    <Content Include="js\bootstrap.min.js.map" />
+    <Content Include="Mobile\Thumbs.db" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BackupFolder\" />
+    <Folder Include="icons\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62792</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:62792/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

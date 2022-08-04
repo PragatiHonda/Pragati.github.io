@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="ravindra.epizy.com" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Ravindra\ Waskale\\source\\repos\\hari\\hari\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\Ravindra\ Waskale\\source\\repos\\hari\\hari\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="pragati_SAMPLEDB-Web.config Connection String" description="" value="Data Source=.;User ID=epiz_29712752;Password=oDUQLQNIRo" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Ravindra\ Waskale\\source\\repos\\hari\\hari\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='pragati_SAMPLEDB']/@connectionString" />
+  </parameter>
+</parameters>
